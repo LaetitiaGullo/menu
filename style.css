@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+   width: 300px;
+   height: 600px;
+   background-color: #656565;
+   display: flex;
+   align-items: flex-end;
+}
+
+.side-bar {
+    width: 75px;
+    height: 580px;
+    background-color: #4c4b4b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.side-bar img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 0 10px 0;
+}
+
+.logo {
+    height: 72.5px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+}
+
+.logo:hover {
+    background-color: white;
+    transition: 1s;
+}
