@@ -1,6 +1,7 @@
 # Animated menu using CSS
 
 ### URL of the project :
+...is yet to come
 
 ### Date of realization :
 January 2021
