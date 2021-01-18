@@ -27,16 +27,63 @@ body {
     margin: 10px 0 10px 0;
 }
 
-.logo {
+.case {
     height: 72.5px;
     width: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
     transition: 1s;
+    position: relative;
+    z-index: 2;
 }
 
-.logo:hover {
+#active {
+    background-color: #262626;
+}
+
+.case:hover .anim {
+    transform: translateX(100%);
+    transition: 1s;
+    z-index: 3;
+}
+
+.logo {
+    background-color: #4c4b4b;
+    height: 72.5px;
+    width: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 1s;
+    position: absolute;
+    z-index: 2;
+}
+
+.case:hover {
     background-color: white;
     transition: 1s;
+}
+
+.case:hover .logo {
+    background-color: white;
+}
+
+.case:hover #active {
+    background-color: white;
+}
+
+.anim {    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    position: absolute;
+    z-index: 1;
+    height: 72.5px;
+    width: 150px;
+    background-color: #262626b0;    
+    margin-left: -75px;
+}
+
+.anim p {
+    margin-left: 20px;
 }
